@@ -22,7 +22,7 @@ export default function Home({ cakeList }) {
 }
 
 export const getServerSideProps = async () => {
-  const res = await axios.get("http://localhost:3000/api/products");
+  const res = await axios.get("http://aung-bakery.vercel.app/api/products");
   return {
     props: { cakeList: res.data },
   };
