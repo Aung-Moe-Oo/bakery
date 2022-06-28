@@ -13,6 +13,7 @@ const CakeCard = ({ cake }) => {
             width={500}
             height={500}
             objectFit="contain"
+            alt="cake"
           />
         </a>
       </Link>
