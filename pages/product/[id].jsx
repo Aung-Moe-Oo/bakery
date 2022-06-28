@@ -120,7 +120,7 @@ const Product = ({ cake }) => {
 
 export const getServerSideProps = async ({ params }) => {
   const res = await axios.get(
-    `http://aung-bakery.vercel.app/api/products/${params.id}`
+    `https://aung-bakery.vercel.app/api/products/${params.id}`
   );
   return {
     props: { cake: res.data },
