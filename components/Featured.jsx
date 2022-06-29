@@ -1,7 +1,7 @@
 import Image from "next/image";
-// import cake1 from "../public/img/cake1.jpg";
-// import cake2 from "../public/img/cake2.jpg";
-// import cake3 from "../public/img/cake3.jpg";
+import cake1 from "../public/img/cake1.jpg";
+import cake2 from "../public/img/cake2.jpg";
+import cake3 from "../public/img/cake3.jpg";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import styles from "../styles/Featured.module.css";
 import { useState } from "react";
@@ -16,12 +16,12 @@ const Featured = () => {
       setIndex(index !== 2 ? index + 1 : 0);
     }
   };
-  // const images = [cake1, cake2, cake3];
-  const images = [
-    "https://i.ibb.co/HNTRCjR/cake1.jpg",
-    "https://i.ibb.co/9TP6tCY/cake2.jpg",
-    "https://i.ibb.co/Lr5tnzP/cake3.jpg",
-  ];
+  const images = [cake1, cake2, cake3];
+//   const images = [
+//     "https://i.ibb.co/HNTRCjR/cake1.jpg",
+//     "https://i.ibb.co/9TP6tCY/cake2.jpg",
+//     "https://i.ibb.co/Lr5tnzP/cake3.jpg",
+//   ];
   return (
     <div className={styles.container}>
       <div
