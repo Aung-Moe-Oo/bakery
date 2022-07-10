@@ -6,12 +6,19 @@ const Footer = () => {
   return (
     <div className={styles.container}>
       <div className={styles.item}>
-        <Image src={shop} alt="shop" layout="fill" objectFit="cover" />
+        <Image
+          src={shop}
+          alt="shop"
+          layout="fill"
+          objectFit="cover"
+          priority="first"
+        />
       </div>
       <div className={styles.item}>
         <div className={styles.card}>
           <h2 className={styles.motto}>
-            Bake The Best Cakes! Make The Best Cakes!
+            BAKE THE BEST CAKES! MAKE THEM SWEET AND DELICIOUS LIKE HEAVEN
+            ITSELF!
           </h2>
         </div>
         <div className={styles.card}>

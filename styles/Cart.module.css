@@ -45,7 +45,8 @@
 .totalTextTitle {
   margin-right: 10px;
 }
-.button {
+.button,
+.button2 {
   cursor: pointer;
   height: 30px;
   font-weight: bold;
@@ -54,8 +55,12 @@
   background-color: #fff;
   margin-top: 20px;
 }
+.button2 {
+  color: teal;
+  border: 2px solid teal;
+}
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 786px) {
   .container {
     flex-direction: column;
     padding: 20px;

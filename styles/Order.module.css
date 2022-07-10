@@ -72,9 +72,10 @@
   margin-top: 20px;
   cursor: not-allowed;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 786px) {
   .container {
     flex-direction: column;
+    padding: 2rem;
   }
   .trTitle {
     display: none;
@@ -83,7 +84,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     font: 20px;
   }
   .id::before {
