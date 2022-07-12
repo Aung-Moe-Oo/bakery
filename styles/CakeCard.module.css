@@ -1,25 +1,27 @@
 .container {
   width: 22%;
-  /* max-height: 400px; */
   height: auto;
+  padding: 20px 20px;
+}
+.container a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 20px 40px;
+  justify-content: space-between;
+  text-decoration: none;
 }
 .title {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #ffc900;
 }
 .img {
   max-width: 400px;
-  height: 400px;
+  max-height: 200px;
 }
 .price {
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #666;
 }
@@ -27,8 +29,7 @@
   text-align: center;
   color: #777;
 }
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 786px) {
   .container {
     width: 100%;
     padding: 5px 20px;
@@ -36,6 +37,10 @@
   .title {
     margin-top: 0;
     font-size: 24px;
+  }
+  .img {
+    width: auto;
+    height: auto;
   }
   .price,
   .desc {

@@ -1,6 +1,6 @@
 .container {
   height: 100px;
-  padding: 0 50px;
+  padding: 0 2rem;
   position: sticky;
   top: 0;
   background-color: #ffc900;
@@ -48,7 +48,7 @@
   text-transform: uppercase;
 }
 .listItem {
-  margin: 1rem;
+  margin: 10px;
   font-weight: 500;
 }
 .cart {
@@ -73,7 +73,14 @@
 .logoSmall {
   display: none;
 }
-@media screen and (max-width: 480px) {
+.logoBig {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+@media screen and (max-width: 786px) {
   .callButton,
   .texts {
     display: none;

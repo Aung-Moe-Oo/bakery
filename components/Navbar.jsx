@@ -12,7 +12,13 @@ const Navbar = () => {
       <div className={styles.item}>
         <Link href="/" passHref>
           <a className={styles.logoSmall}>
-            <Image width="150px" height="90px" src={logo} alt="aung" />
+            <Image
+              width="150px"
+              height="90px"
+              src={logo}
+              alt="aung"
+              priority="first"
+            />
           </a>
         </Link>
         <div className={styles.callButton}>
@@ -29,8 +35,14 @@ const Navbar = () => {
           <li className={styles.listItem}>Products</li>
           <li className={styles.listItem}>Menu</li>
           <Link href="/" passHref>
-            <a>
-              <Image width="150px" height="90px" src={logo} alt="aung" />
+            <a className={styles.logoBig}>
+              <Image
+                width="150px"
+                height="90px"
+                src={logo}
+                alt="aung"
+                priority="first"
+              />
             </a>
           </Link>
           <li className={styles.listItem}>Events</li>

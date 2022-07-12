@@ -32,24 +32,22 @@ const Product = ({ cake }) => {
       setExtras(extras.filter((extra) => extra._id !== option._id));
     }
   };
-  console.log(extras);
 
   const handleClick = () => {
     dispatch(addProduct({ ...cake, extras, price, quantity }));
   };
 
-  // const cake = {
-  //   id: 1,
-  //   img: cake1,
-  //   name: "Strawberry Cake",
-  //   price: [29.9, 31.9, 33.9],
-  //   desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, tempora.",
-  // };
   return (
     <div className={styles.container}>
       <div className={styles.left}>
         <div className={styles.imgContainer}>
-          <Image src={cake.img} alt="cake" layout="fill" objectFit="cover" />
+          <Image
+            src={cake.img}
+            priority="first"
+            alt="cake"
+            layout="fill"
+            objectFit="cover"
+          />
         </div>
       </div>
       <div className={styles.right}>

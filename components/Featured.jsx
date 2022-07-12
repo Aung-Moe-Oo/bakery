@@ -17,11 +17,11 @@ const Featured = () => {
     }
   };
   const images = [cake1, cake2, cake3];
-//   const images = [
-//     "https://i.ibb.co/HNTRCjR/cake1.jpg",
-//     "https://i.ibb.co/9TP6tCY/cake2.jpg",
-//     "https://i.ibb.co/Lr5tnzP/cake3.jpg",
-//   ];
+  // const images = [
+  //   "https://i.ibb.co/HNTRCjR/cake1.jpg",
+  //   "https://i.ibb.co/9TP6tCY/cake2.jpg",
+  //   "https://i.ibb.co/Lr5tnzP/cake3.jpg",
+  // ];
   return (
     <div className={styles.container}>
       <div

@@ -17,7 +17,7 @@ const ProductSchema = new mongoose.Schema(
       required: true,
     },
     prices: {
-      type: [Number], // type will be array but it must be number.
+      type: [Number], // type will be in array but it must be number.
       required: true,
     },
     extraOption: {

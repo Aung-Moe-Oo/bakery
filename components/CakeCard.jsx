@@ -12,14 +12,15 @@ const CakeCard = ({ cake }) => {
             src={cake.img}
             width={500}
             height={500}
+            priority="first"
             objectFit="contain"
             alt="cake"
           />
+          <h1 className={styles.title}>{cake.title}</h1>
+          <span className={styles.price}>${cake.prices[0]}</span>
+          <p className={styles.desc}>{cake.desc}</p>
         </a>
       </Link>
-      <h1 className={styles.title}>{cake.title}</h1>
-      <span className={styles.price}>${cake.prices[0]}</span>
-      <p className={styles.desc}>{cake.desc}</p>
     </div>
   );
 };

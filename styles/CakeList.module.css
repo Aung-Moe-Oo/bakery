@@ -16,9 +16,14 @@
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 786px) {
   .title {
     text-align: center;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   .desc {
     font-size: 18px;
